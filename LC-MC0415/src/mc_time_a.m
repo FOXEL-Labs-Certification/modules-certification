@@ -90,6 +90,6 @@
         set( gcf, 'PaperPosition', [0 0 20 10] );
 
         % Export plot in color EPS format %
-        print( '-depsc', '-F:12', [ '../dev/plots/time_a.eps' ] );
+        print( '-depsc', '-F:12', [ '../dev/plots/mc_time_a.eps' ] );
 
     end

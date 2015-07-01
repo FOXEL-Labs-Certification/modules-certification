@@ -73,6 +73,6 @@
         set( gcf, 'PaperPosition', [0 0 20 10] );
 
         % Export plot in color EPS format %
-        print( '-depsc', '-F:12', [ '../dev/plots/storage_s.eps' ] );
+        print( '-depsc', '-F:12', [ '../dev/plots/mc_storage_s.eps' ] );
 
     end
