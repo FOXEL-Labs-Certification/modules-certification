@@ -60,7 +60,7 @@
         stem( mc_c, mc_m, 'ko', 'Filled', 'LineWidth', 2, 'LineStyle', ':', 'MarkerFaceColor','k', 'MarkerEdgeColor','w' );
 
         % Display model %
-        plot( [ min(dm_c), max(dm_c) ], [ min(dm_c), max(dm_c) ] * mc_p, '-r', 'LineWidth', 2 );
+        plot( [ min(mc_c), max(mc_c) ], [ min(mc_c), max(mc_c) ] * mc_p, 'color', [10 200 90]/255', 'LineWidth', 2 );
 
         % Axis labels %
         xlabel( 'Threads' );

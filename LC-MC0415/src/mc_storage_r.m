@@ -60,7 +60,7 @@
         stem( mc_n, mc_s, 'ko', 'Filled', 'LineWidth', 2, 'LineStyle', ':', 'MarkerFaceColor','k', 'MarkerEdgeColor','w' );
 
         % Display model %
-        plot( [ min(dm_n), max(dm_n) ], [ min(dm_n), max(dm_n) ] * mc_p, '-r', 'LineWidth', 2 );
+        plot( [ min(mc_n), max(mc_n) ], [ min(mc_n), max(mc_n) ] * mc_p, 'color', [10 200 90]/255, 'LineWidth', 2 );
 
         % Axis labels %
         xlabel( 'Captures' );

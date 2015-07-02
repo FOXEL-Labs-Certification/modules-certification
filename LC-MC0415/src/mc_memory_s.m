@@ -73,7 +73,7 @@
         stem3( mc_n, mc_c, mc_m, 'ko', 'Filled', 'LineWidth', 2, 'LineStyle',':', 'MarkerFaceColor','k', 'MarkerEdgeColor','w' );
 
         % Display model %
-        surf( mc_x, mc_y, mc_f', 'EdgeColor', 'None', 'FaceColor', 'Interp' ); colormap( autumn );
+        surf( mc_x, mc_y, mc_f', 'EdgeColor', 'None', 'FaceColor', 'Interp' ); colormap( summer );
 
         % Set viewport %
         view( [ 180 + 45, 25 ] );
