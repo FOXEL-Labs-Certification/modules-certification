@@ -49,7 +49,7 @@
         mc_p = [ ( mc_n' ./ mc_c' ); ( mc_n' ) ]' \ mc_t;
 
         % Display parameter %
-        printf( 'Estimated parameter : %f\n', mc_p );
+        printf( 'Estimated parameter : %f %f\n', mc_p(1), mc_p(2) );
 
         % Create mapping axis %
         mc_x = linspace( min( mc_n ), max( mc_n ), max( mc_n ) - min( mc_n ) );

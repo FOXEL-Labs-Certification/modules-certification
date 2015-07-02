@@ -45,10 +45,10 @@
         mc_m = mc_meas(:,2) / 1024;
 
         % Estimate model parameter %
-        mc_p = mc_c \ mc_m;
+        mc_p = [ mc_c'; ones(length(mc_c),1)' ]' \ mc_m;
 
         % Display parameter %
-        printf( 'Estimated parameter : %f\n', mc_p );
+        printf( 'Estimated parameter : %f %f\n', mc_p(1), mc_p(2) );
 
         % Plot configuration %
         figure
@@ -60,7 +60,7 @@
         stem( mc_c, mc_m, 'ko', 'Filled', 'LineWidth', 2, 'LineStyle', ':', 'MarkerFaceColor','k', 'MarkerEdgeColor','w' );
 
         % Display model %
-        plot( [ min(mc_c), max(mc_c) ], [ min(mc_c), max(mc_c) ] * mc_p, 'color', [10 200 90]/255, 'LineWidth', 2 );
+        plot( [ min(mc_c), max(mc_c) ], [ min(mc_c), max(mc_c) ] * mc_p(1) + mc_p(2), 'color', [10 200 90]/255, 'LineWidth', 2 );
 
         % Axis labels %
         xlabel( 'Threads' );
