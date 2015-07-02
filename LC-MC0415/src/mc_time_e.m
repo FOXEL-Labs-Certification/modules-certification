@@ -46,7 +46,7 @@
         mc_t = mc_meas(:,3);
 
         % Estimate model parameter %
-        mc_p = ( mc_n ./ mc_c ) \ mc_t;
+        mc_p = [ ( mc_n' ./ mc_c' ); ( mc_n' ) ]' \ mc_t;
 
         % Display parameter %
         printf( 'Estimated parameter : %f\n', mc_p );
@@ -59,7 +59,7 @@
         for mc_xx = 1 : length( mc_x ); for mc_yy = 1 : length( mc_y )
 
                 % Create function %
-                mc_f( mc_xx, mc_yy ) = mc_p * ( mc_x( mc_xx ) / mc_y( mc_yy ) );
+                mc_f( mc_xx, mc_yy ) = mc_p(1) * ( mc_x( mc_xx ) / mc_y( mc_yy ) ) + mc_p(2) * mc_x( mc_xx);
 
         end; end
 
