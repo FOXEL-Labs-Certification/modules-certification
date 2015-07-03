@@ -9,9 +9,6 @@ necessities. This department is then in charge to define and certify mathematica
 models that correctly describe modules processing properties.
 </p>
 
-<p align="justify">
-</p>
-
 ### Copyright
 
 Copyright (c) 2013-2015 FOXEL SA - [http://foxel.ch](http://foxel.ch)<br />
